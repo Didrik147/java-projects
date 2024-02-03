@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Sat Feb 03 17:26:09 CET 2024:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): instance a816c00e-018d-6fca-ab96-000001250a08 
-on database directory memory:C:\Users\didri\Documents\GitHub\didrik-learning\java\course-api-data\58f8ae00-3e85-4843-869e-9bf23a335d3d with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@76ed5528 
+Sat Feb 03 18:12:04 CET 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): instance a816c00e-018d-6ff4-b1fe-000000ebb308 
+on database directory memory:C:\Users\didri\Documents\GitHub\didrik-learning\java\course-api-data\9151bd10-ebeb-4da0-88ed-1e4fbb01c313 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@76ed5528 
 Loaded from file:/C:/Users/didri/.m2/repository/org/apache/derby/derby/10.16.1.1/derby-10.16.1.1.jar
 java.vendor=Oracle Corporation
 java.runtime.version=21.0.2+13-58
