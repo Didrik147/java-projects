@@ -1,4 +1,4 @@
-// Made by using the following tutorial:
+// This program is made using the following tutorial:
 // https://youtu.be/GMdgjaDdOjI?si=SSacktdYqk-_m0si
 
 public class App {
