@@ -1,3 +1,3 @@
 # Java
 
-A repository for learning Java.
+A repository for my Java projects.
