@@ -9,13 +9,13 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
-        <!-- Add the JSON dependency here -->
         <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20210307</version> <!-- Check for the latest version -->
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>[20231013,)</version>
         </dependency>
     </dependencies>
+
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

@@ -1,8 +1,9 @@
 import static java.lang.System.*;
 
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.Scanner;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -11,36 +12,22 @@ public class MainApp {
     public static void main(String[] args){
         try {
             int numPeople = 10;
+            // Create HttpClient
+            HttpClient client = HttpClient.newHttpClient();
 
-            // Create a URL object
-            URL url = new URL("https://randomuser.me/api/?nat=no&results=" + numPeople);
+            // Create HTTP request
+            HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create("https://randomuser.me/api/?nat=no&results=" + numPeople))
+                .header("Accept", "application/json")
+                .GET()
+                .build();
 
-            // Open a connection to the URL
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            // Send request and get response
+            HttpResponse<String> response = client.send(request,
+                HttpResponse.BodyHandlers.ofString());
 
-            // Set the request method (GET)
-            connection.setRequestMethod("GET");
-
-            connection.connect();
-
-            //Getting the response code
-            int responsecode = connection.getResponseCode();
-
-            if (responsecode != 200) {
-                throw new RuntimeException("HttpResponseCode: " + responsecode);
-            } else {
-                String inline = "";
-                Scanner scanner = new Scanner(url.openStream());
-
-                //Write all the JSON data into a string using a scanner
-                while (scanner.hasNext()) {
-                    inline += scanner.nextLine();
-                }
-
-                //Close the scanner
-                scanner.close();
-
-                JSONObject mainObject = new JSONObject(inline);
+            // Parse JSON response
+            JSONObject mainObject = new JSONObject(response.body());
                 JSONArray results = mainObject.getJSONArray("results");
 
                 for(int i=0; i<results.length(); i++) {
@@ -57,9 +44,8 @@ public class MainApp {
                     out.println("Born: " + birthDate);
                     out.println("");
                 }
-            }
 
-        } catch(Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
