@@ -1,0 +1,100 @@
+1;Emma;Tvedt;1996-05-12;Rådgiver;914000.0;7
+2;Eric;Sigvartsen;1997-09-13;Idéastronaut;820000.0;4
+3;Muhammed;Myhrer;1958-05-12;Assistant Account Executive;750000.0;1
+4;Noor;Berstad;1986-05-14;Idéastronaut;450000.0;10
+5;Milia;Haglund;1987-06-01;Spesialrådgiver;791000.0;8
+6;Tora;Bø;1973-04-18;Spesialrådgiver;905000.0;1
+7;Eline;Vevang;1980-12-16;Data Scientist;506000.0;10
+8;Odd;Reinertsen;1968-12-01;Rådgiver;463000.0;1
+9;Michael;Bjelland;1977-02-08;Sivilingeniør;408000.0;9
+10;Rakel;Sandland;1991-02-09;Assistant Account Executive;577000.0;6
+11;Wilma;Jordal;1985-08-02;Sivilingeniør;608000.0;5
+12;Arthur;Blystad;1992-01-29;Rådgiver;738000.0;7
+13;Marit;Wanvik;1967-10-15;Byggingeniør;689000.0;1
+14;Lauritz;Wibe;1960-06-24;Data Platfrom Specialist;889000.0;4
+15;Sandra;Rognerud;1998-04-01;Data Scientist;753000.0;8
+16;Savannah;Bredesen;1990-06-23;Renholdskonsulent;822000.0;3
+17;Rita;Lade;1967-08-30;Utvikler;812000.0;4
+18;Susanne;Kolseth;1976-01-12;Data Engineer;814000.0;3
+19;Celin;Søiland;1973-06-06;Data Scientist;894000.0;4
+20;Mikael;Langø;1995-09-16;Ingeniør;732000.0;2
+21;Sham;Røyrvik;1981-10-30;Data Engineer;884000.0;4
+22;Molly;Sviggum;1945-10-05;Byggingeniør;933000.0;4
+23;Ayman;Sletta;1971-05-01;Sivilingeniør;975000.0;9
+24;Alf;Osmundsen;1982-03-08;Blikkenslager;587000.0;9
+25;Kira;Volle;1976-08-02;Assistant Account Executive;468000.0;5
+26;Annabel;Mjølhus;1961-12-21;Rådgiver;549000.0;7
+27;Kornelia;Fossdal;1966-01-05;Assistant Account Executive;585000.0;10
+28;Eivor;Stava;1955-06-29;Konsulent;433000.0;2
+29;Siham;Sara;1963-10-12;Data Engineer;471000.0;4
+30;Evelina;Birkelund;1970-07-31;Assistant Account Executive;999000.0;8
+31;Idunn;Iversen;1947-06-13;Rådgiver;617000.0;2
+32;Maja;Engebretsen;1987-12-17;Renholdskonsulent;827000.0;1
+33;Nicolay;Eskeland;1983-05-09;Idéastronaut;928000.0;5
+34;Michael;Ottosen;1984-08-17;Data Engineer;694000.0;1
+35;Eric;Larssen;1969-11-05;Lærling;573000.0;5
+36;Hubert;Bergem;1948-01-23;Ingeniør;576000.0;4
+37;Nela;Sture;1992-10-31;Lærling;946000.0;8
+38;Lovise;Jentoft;1987-12-03;Ingeniør;505000.0;10
+39;Bettina;Haugsdal;1946-09-14;Renholdskonsulent;302000.0;7
+40;Arman;Oma;1961-09-29;Lærling;554000.0;10
+41;Denis;Duong;1991-05-28;Data Scientist;623000.0;6
+42;Martin;Risan;1979-09-19;Blikkenslager;833000.0;3
+43;Viktor;Aarseth;1990-05-18;Rådgiver;350000.0;3
+44;Matteo;Dahle;1947-12-27;Data Engineer;630000.0;8
+45;Alba;Aanes;1956-06-30;Ingeniør;458000.0;7
+46;Thor;Heggem;1969-06-13;Byggingeniør;400000.0;1
+47;Rawan;Hassan;1971-10-11;Idéastronaut;568000.0;3
+48;Noor;Kvamme;1981-03-01;Utvikler;946000.0;7
+49;Juni;Ravn;1998-11-29;Ingeniør;717000.0;3
+50;Eilev;Lundh;1991-09-10;Utvikler;767000.0;3
+51;Tine;Fonn;1967-03-29;Data Scientist;379000.0;4
+52;Alvin;Østgård;1950-08-27;Ingeniør;890000.0;10
+53;Madelen;Vågenes;1998-07-31;Idéastronaut;450000.0;6
+54;Colin;Skjønberg;1963-09-10;Spesialrådgiver;809000.0;4
+55;Thelma;Vang;1990-12-16;Assistant Account Executive;557000.0;8
+56;Casper;Sporsheim;1961-03-27;Idéastronaut;475000.0;4
+57;Imre;Skjelstad;1955-10-04;Førstekonsulent;866000.0;10
+58;Vilma;Tønnessen;1992-08-24;Lærling;377000.0;4
+59;Alina;Linde;1976-06-29;Idéastronaut;497000.0;7
+60;Yara;Kløvstad;1964-06-06;Utvikler;534000.0;3
+61;Luca;Kirkerud;1954-06-10;Konsulent;400000.0;2
+62;Ingrid;Berthelsen;1967-02-26;Data Scientist;512000.0;6
+63;Ludvig;Djupvik;1952-06-20;Assistant Account Executive;419000.0;8
+64;Pola;Stålesen;1992-10-01;Utvikler;899000.0;8
+65;Aleksandra;Rasmussen;1950-11-18;Data Scientist;565000.0;1
+66;Yasin;Rosnes;1960-05-24;Lærling;670000.0;9
+67;Aras;Nymark;1991-04-09;Spesialrådgiver;998000.0;9
+68;Johan;Ulven;1977-05-13;Idéastronaut;484000.0;1
+69;Ibrahim;Hallingstad;1966-07-23;Data Engineer;647000.0;8
+70;Luna;Håheim;1976-12-25;Blikkenslager;489000.0;5
+71;Zakaria;Tomren;1962-04-08;Renholdskonsulent;846000.0;4
+72;Neo;Lothe;1966-08-01;Rådgiver;855000.0;4
+73;Daniella;Fjellheim;1950-09-19;Konsulent;964000.0;7
+74;Lavrans;Vedal;1954-01-01;Utvikler;639000.0;8
+75;Irene;Aaberg;1995-11-19;Konsulent;598000.0;4
+76;Emilija;Hannisdal;1973-04-26;Data Scientist;502000.0;7
+77;Noel;Torsvik;1962-12-01;Renholdskonsulent;550000.0;3
+78;Tellef;Alfsen;1994-12-30;Ingeniør;656000.0;3
+79;Gunnar;Ugland;1980-09-17;Førstekonsulent;351000.0;2
+80;Sanna;Mardal;1965-09-21;Data Engineer;852000.0;1
+81;Jonah;Aarstad;1962-01-14;Blikkenslager;778000.0;1
+82;Milan;Sumstad;1963-01-01;Konsulent;819000.0;10
+83;Andre;Walseth;1985-04-26;Rådgiver;380000.0;9
+84;Martinus;Jensen;1967-06-12;Assistant Account Executive;404000.0;6
+85;Ina;Tryggestad;1988-11-06;Idéastronaut;417000.0;8
+86;Emin;Akhtar;1996-08-13;Renholdskonsulent;780000.0;6
+87;Bjørnar;Grindheim;1990-10-20;Assistant Account Executive;836000.0;6
+88;Kaya;Drage;1972-11-07;Blikkenslager;951000.0;7
+89;Nathaniel;Solbakken;2000-01-20;Lærling;431000.0;8
+90;Dania;Dyrnes;1955-11-16;Spesialrådgiver;840000.0;6
+91;Victor;Kvinlaug;1964-03-11;Lærling;569000.0;4
+92;Emma;Haddal;1965-11-14;Konsulent;774000.0;8
+93;Johan;Berisha;1999-04-06;Blikkenslager;398000.0;8
+94;Victoria;Ose;1977-12-13;Lærling;623000.0;7
+95;Håkon;Isachsen;1997-03-19;Byggingeniør;734000.0;4
+96;Fredrik;Gjelstad;1977-12-28;Renholdskonsulent;594000.0;7
+97;Abdul;Igland;1996-09-01;Rådgiver;702000.0;5
+98;Tor;Aamot;1977-11-25;Konsulent;815000.0;4
+99;Millie;Østensen;1960-04-18;Lærling;981000.0;1
+100;Adela;Berisha;1978-09-29;Byggingeniør;815000.0;5

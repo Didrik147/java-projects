@@ -1,5 +1,6 @@
 import static java.lang.System.*;
 
+import java.io.PrintWriter;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -9,9 +10,10 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class MainApp {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         try {
-            int numPeople = 10;
+            int numPeople = 100;
+
             // Create HttpClient
             HttpClient client = HttpClient.newHttpClient();
 
@@ -28,25 +30,52 @@ public class MainApp {
 
             // Parse JSON response
             JSONObject mainObject = new JSONObject(response.body());
-                JSONArray results = mainObject.getJSONArray("results");
+            JSONArray results = mainObject.getJSONArray("results");
 
-                for(int i=0; i<results.length(); i++) {
-                    JSONObject user = results.getJSONObject(i);
+            // Out file
+            PrintWriter writer = new PrintWriter("random_employees.csv");
 
-                    JSONObject name = user.getJSONObject("name");
-                    String firstName = name.getString("first");
-                    String lastName = name.getString("last");
-                    JSONObject dob = user.getJSONObject("dob");
-                    String birthDate = dob.getString("date");
-                    birthDate = birthDate.split("T")[0];
+            String[] titles = {"Rådgiver", "Spesialrådgiver", "Ingeniør", "Sivilingeniør", "Data Platfrom Specialist", "Data Engineer", "Utvikler", "Data Scientist", "Assistant Account Executive", "Renholdskonsulent", "Idéastronaut", "Førstekonsulent", "Lærling", "Konsulent", "Blikkenslager", "Byggingeniør"};
 
-                    out.println("Name: " + firstName + " " + lastName);
-                    out.println("Born: " + birthDate);
-                    out.println("");
-                }
+            for (int i = 0; i < results.length(); i++) {
+                // Getting data about one person
+                JSONObject user = results.getJSONObject(i);
+
+                JSONObject name = user.getJSONObject("name");
+                String firstName = name.getString("first");
+                String lastName = name.getString("last");
+                JSONObject dob = user.getJSONObject("dob");
+                String birthDate = dob.getString("date");
+                birthDate = birthDate.split("T")[0];
+
+                // Ansattnr.
+                writer.print((i+1) + ";");
+
+                // Navn
+                writer.print(firstName + ";" + lastName + ";");
+
+                // Fødselsdato
+                writer.print(birthDate + ";");
+
+                // Stilling
+                writer.print(titles[randInt(0, titles.length-1)] + ";");
+
+                // Lønn
+                writer.print(randInt(300, 999)*1000.0 + ";");
+
+                // Kontorkode
+                writer.println(randInt(1,10));
+            }
+
+            writer.close();
 
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    // Creating a random integer between low and high (inclusive)
+    private static int randInt(int low, int high) {
+        return (int) (Math.random() * (high - low + 1)) + low;
     }
 }
