@@ -1,10 +1,14 @@
 import static java.lang.System.*;
 
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.nio.charset.StandardCharsets;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -12,7 +16,7 @@ import org.json.JSONObject;
 public class MainApp {
     public static void main(String[] args) {
         try {
-            int numPeople = 100;
+            int numPeople = 96;
 
             // Create HttpClient
             HttpClient client = HttpClient.newHttpClient();
@@ -33,9 +37,15 @@ public class MainApp {
             JSONArray results = mainObject.getJSONArray("results");
 
             // Out file
-            PrintWriter writer = new PrintWriter("random_employees.csv");
+            //PrintWriter writer = new PrintWriter("random_employees.csv");
+
+            OutputStream os = new FileOutputStream("tilfeldige_ansatte.csv");
+            PrintWriter writer = new PrintWriter(new OutputStreamWriter(os, StandardCharsets.UTF_8));
+
 
             String[] titles = {"Rådgiver", "Spesialrådgiver", "Ingeniør", "Sivilingeniør", "Data Platfrom Specialist", "Data Engineer", "Utvikler", "Data Scientist", "Assistant Account Executive", "Renholdskonsulent", "Idéastronaut", "Førstekonsulent", "Lærling", "Konsulent", "Blikkenslager", "Byggingeniør"};
+
+            writer.println("ansattnr;fornavn;etternavn;fødselsdato;stilling;lønn;kontorkode");
 
             for (int i = 0; i < results.length(); i++) {
                 // Getting data about one person
@@ -49,7 +59,7 @@ public class MainApp {
                 birthDate = birthDate.split("T")[0];
 
                 // Ansattnr.
-                writer.print((i+1) + ";");
+                writer.print((i+1+4) + ";");
 
                 // Navn
                 writer.print(firstName + ";" + lastName + ";");
